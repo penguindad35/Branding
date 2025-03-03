@@ -12,38 +12,48 @@ document.addEventListener("DOMContentLoaded", function () {
         document.querySelector("footer"),
         document.querySelector(".wrappernav"),
         document.querySelector(".wrappernavwords"),
-        document.querySelectorAll("section, article, aside, main, h1, h2, h3, p, a, div, ul, li, span, label, button, input, textarea, .region, .travel, #darkmode"),
+        ...document.querySelectorAll("header, section, article, aside, div, ul, li, span, label, input, table tr, table td, table th"),
     ];
 
-    // Elements to EXCLUDE from dark mode
+    // Select elements where text color should change (but background remains unaffected)
+    const textElementsToChange = [
+        ...document.querySelectorAll("h1, h2, h3, h4, h5, h6, p, a, label, button, span, ul, li, td, th"),
+    ];
+
+    // Detect if the user is on the homepage by checking for a unique element
+    const mainElement = document.querySelector("main");
+    const isHomePage = mainElement && mainElement.classList.contains("index-main");
+
+    // Exclude `<main>` from dark mode if on the home page
+    if (!isHomePage) {
+        elementsToToggle.push(mainElement);
+    }
+
+    // Elements to EXCLUDE from dark mode (backgrounds stay unchanged)
     const elementsToExclude = [
-        document.querySelector(".newgreen"), // Prevent .newgreen from changing
-        document.querySelector("#gallery"), // Prevent #gallery from changing
-        document.querySelectorAll("#gallery img"), // Prevent images in gallery from changing
-        document.querySelectorAll("table tr, table td, table th, .travel"), // Prevent tables from turning black
-        document.querySelectorAll("#heroindex, #morgathimage, #thragarimage, #elowenimage, #kaelithorimage, #vestraimage, #nimimage, #twisted-fangimage, #heroDM, #aidm, #world, #lore, #opinion, #scribe, .contribute-peice-7, #mobile-nav li") // Exclude background images
+        ...document.querySelectorAll("img, video, gif"), // Prevent images, videos, and GIFs from changing
+        ...document.querySelectorAll(".index-main-content, .index-main-content-right, .resume-short, .resume-long, #mobile-nav li"), // Exclude background images
     ];
 
     // Function to enable dark mode
     function enableDarkMode() {
         elementsToToggle.forEach(element => {
             if (element) {
-                if (NodeList.prototype.isPrototypeOf(element)) {
-                    element.forEach(el => el.classList.add("dark-mode"));
-                } else {
-                    element.classList.add("dark-mode");
-                }
+                element.classList.add("dark-mode-bg");
+            }
+        });
+
+        // Change text color
+        textElementsToChange.forEach(element => {
+            if (element) {
+                element.classList.add("dark-mode-text");
             }
         });
 
         // Ensure excluded elements keep their original styles
         elementsToExclude.forEach(element => {
             if (element) {
-                if (NodeList.prototype.isPrototypeOf(element)) {
-                    element.forEach(el => el.classList.remove("dark-mode"));
-                } else {
-                    element.classList.remove("dark-mode");
-                }
+                element.classList.remove("dark-mode-bg"); // Background remains unchanged
             }
         });
 
@@ -54,11 +64,13 @@ document.addEventListener("DOMContentLoaded", function () {
     function disableDarkMode() {
         elementsToToggle.forEach(element => {
             if (element) {
-                if (NodeList.prototype.isPrototypeOf(element)) {
-                    element.forEach(el => el.classList.remove("dark-mode"));
-                } else {
-                    element.classList.remove("dark-mode");
-                }
+                element.classList.remove("dark-mode-bg");
+            }
+        });
+
+        textElementsToChange.forEach(element => {
+            if (element) {
+                element.classList.remove("dark-mode-text");
             }
         });
 
@@ -90,6 +102,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
 
 let slideIndex = 0;
                         let slides = document.querySelectorAll(".slides");
