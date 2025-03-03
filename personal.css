@@ -913,7 +913,7 @@ video{
         z-index: 999;
         justify-content: center;
         align-items: center;
-        font-size: 3em;
+        font-size: 2em;
     }
 
     .wrappernav {
@@ -934,7 +934,7 @@ video{
         top: 90px;
         right: 20px;
         font-size: 2em;
-        color: black;
+        color: gray;
         text-decoration: none;
         z-index: 1000;
     }
