@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Elements to EXCLUDE from dark mode (backgrounds stay unchanged)
     const elementsToExclude = [
         ...document.querySelectorAll("img, video, gif"), // Prevent images, videos, and GIFs from changing
-        ...document.querySelectorAll(".index-main-content, .index-main-content-right, .resume-short, .resume-long, #mobile-nav li"), // Exclude background images
+        ...document.querySelectorAll(".index-main-content, .index-main-content-right, .resume-short, .resume-long, .dark-mode-placement, #mobile-nav li"), // Exclude background images
     ];
 
     // Function to enable dark mode
