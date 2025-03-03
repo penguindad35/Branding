@@ -1,0 +1,3 @@
+To get the "aside" to the right side two changes need to take place.
+1- remove "max-width: 200px;" this needs done so the aside can take up the rest of the space within main and the max-width restrains it from getting wider than 200px.
+2- change "margin: 1.5em 2.0202% 0 0;" to "margin: 1.5em 0 0 0;" the "2.0202%" is the second value which is the right side so removing that will make it align with the "main" flexbox.

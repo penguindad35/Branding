@@ -1,0 +1,912 @@
+﻿
+
+header, main, nav, footer, figure, figcaption, aside, section, article {
+    display: block;
+}
+.wrapperbody {
+    padding: 2em;
+    position: relative;
+    font-family: "Garamond", "Times New Roman", serif;
+    color: #C0C0C0;
+    
+}
+#mobile-nav, .mobilenav, .open-nav {
+    display: none;
+}
+
+.wrapperh1index {
+    
+    text-align: center;
+    font-size: 2em;
+    padding: 1em;
+    bottom: 0;
+    padding-bottom: 0;
+}
+.wrapperh1contribute {
+    text-align: center;
+    font-size: 2em;
+    padding: 1em;
+    bottom: 0;
+    padding-bottom: 0;
+    font-family: Papyrus;
+    color: #D4AF37;
+}
+.wrappernav {
+    background-color: #2E2E2E;
+    
+    flex: 1;
+    
+    text-align:center;
+    color:white;
+    
+}
+.wrappernavwords {
+    position: fixed;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+    padding-left: .5em;
+    padding-right: .5em;
+    font-size: 1.5em;
+    width: 18%;
+    font-family: "Garamond", "Times New Roman", serif;
+    color: #C0C0C0;
+}
+
+body {
+    background-image: url(backgroundindex.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    transition: background 1s;
+}
+    body p {
+        text-indent: 2em;
+    }
+   
+
+       
+h1 a {
+    text-decoration: none;
+    font-family: Papyrus;
+}
+
+    h1 a:link {
+        color: #A9A9A9;
+    }
+
+    h1 a:visited {
+        color: #D4AF37;
+    }
+
+    h1 a:hover {
+        color: #B8860B;
+    }
+body h2 {
+    font-family: Copperplate;
+    color: #D4AF37;
+    margin-top: 0;
+}
+footer {
+    text-align: center;
+   color: #C0C0C0;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+footer a {
+    color: #D4AF37;
+}
+
+main a {
+    text-decoration: none;
+    font-family: Papyrus;
+}
+
+    main a:link {
+        color: #FFFFFF;
+    }
+
+    main a:visited {
+        color: #A9A9A9;
+    }
+
+    main a:hover {
+        color: #B8860B;
+    }
+
+    main a:active {
+        color: aqua;
+    }
+    nav a {
+        text-decoration: none;
+        font-family: Papyrus;
+
+    }
+
+    nav a:link {
+        color: #FFFFFF;
+    }
+
+        nav a:visited {
+            color: #A9A9A9;
+        }
+
+    nav a:hover {
+        color: #B8860B;
+    }
+        nav a:active {
+            color: aqua;
+        }
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+
+    }
+
+nav ul li {padding-bottom: 15px;}
+
+ 
+
+
+
+footer p {
+    font-family: Copperplate;
+    
+}
+
+#container {
+    display: flex;
+    align-items: stretch;
+    width: 80%;
+    margin-top: 0;
+    margin-left: 10%;
+    
+    background-image: linear-gradient(to bottom, #013220, #1B4D3E);
+}
+
+#left-container {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+#heroindex {
+    background-image: url(heroindex1.png);
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+    aspect-ratio: 16/9;
+    width: 98%;
+    background-size: 100% 100%;
+    justify-content: center;
+    border: 13px solid transparent;
+    border-image: url(borderaxe.png) 50 round;
+    margin-bottom:1em;
+
+}
+#morgathimage {
+    background-image: url(Morgath.jpeg);
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+    aspect-ratio: 886/886;
+    width: 98%;
+    background-size: 100% 100%;
+    justify-content: center;
+}
+#thragarimage {
+    background-image: url(Thragar.jpeg);
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+    aspect-ratio: 1792/1024;
+    width: 98%;
+    background-size: 100% 100%;
+    justify-content: center;
+}
+#elowenimage {
+    background-image: url(Elowen.jpeg);
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+    aspect-ratio: 1792/1024;
+    width: 98%;
+    background-size: 100% 100%;
+    justify-content: center;
+}
+#kaelithorimage {
+    background-image: url(Kaelithor.jpeg);
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+    aspect-ratio: 886/886;
+    width: 98%;
+    background-size: 100% 100%;
+    justify-content: center;
+}
+#vestraimage {
+    background-image: url(Vestra.jpeg);
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+    aspect-ratio: 886/886;
+    width: 98%;
+    background-size: 100% 100%;
+    justify-content: center;
+}
+#nimimage {
+    background-image: url(nim.jpeg);
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+    aspect-ratio: 886/886;
+    width: 98%;
+    background-size: 100% 100%;
+    justify-content: center;
+}
+#twisted-fangimage {
+    background-image: url(twisted-fang.png);
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+    aspect-ratio: 886/886;
+    width: 98%;
+    background-size: 100% 100%;
+    justify-content: center;
+}
+#heroDM {
+    background-image: url(DM.png);
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+    aspect-ratio: 886/886;
+    width: 98%;
+    background-size: 100% 100%;
+    justify-content: center;
+}
+#aidm {
+    background-image: url(aidm.png);
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+    aspect-ratio: 886/886;
+    width: 98%;
+    background-size: 100% 100%;
+    justify-content: center;
+}
+#world {
+    background-image: url(world.png);
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+    aspect-ratio: 886/886;
+    width: 98%;
+    background-size: 100% 100%;
+    justify-content: center;
+}
+#lore {
+    background-image: url(lore.png);
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+    aspect-ratio: 886/886;
+    width: 98%;
+    background-size: 100% 100%;
+    justify-content: center;
+}
+#opinion {
+    background-image: url(opinion.png);
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+    aspect-ratio: 886/886;
+    width: 98%;
+    background-size: 100% 100%;
+    justify-content: center;
+}
+#scribe {
+    background-image: url(scribe.png);
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+    aspect-ratio: 886/886;
+    width: 98%;
+    background-size: 100% 100%;
+    justify-content: center;
+}
+.explain {
+    font-style: italic;
+}
+main h1{
+    color: white;
+}
+.contribute {
+    display: flex;
+    width: 100%;
+    padding: 4px;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: black 4px 4px;
+    flex-direction: column;
+    font-size: 1.5em;
+    color: black;
+}
+.contribute-peice {
+    margin: 1em;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: black 4px 4px;
+    height: 2em;
+    max-width: 95%;
+}
+.contribute-peice-5 {
+    height:10em;
+    max-height: 50em;
+    min-height:2em;
+    min-width:50%
+
+}
+.contribute-peice-6 {
+    width: 7em;
+    height: 1.5em;
+}
+.contribute-peice-7 {
+    width: 40%;
+    height: 3em;
+    align-self: center;
+}
+    .contribute-peice-7:hover {
+        background-color: #D4AF37;
+    }
+    .contribute-peice-6:hover {
+        background-color: #D4AF37;
+    }
+label {
+    color: #D4AF37;
+}
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: darkgreen;
+}
+
+th, td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: left;
+    color: #A9A9A9;
+}
+
+th {
+    background-color: green;
+    color: #A9A9A9;
+}
+
+tr:nth-child(even) {
+    background-color: #1B4D3E;
+}
+
+tr:hover {
+    background-color: gold;
+}
+td a {
+    color: #121212;
+}
+td a:hover{
+    color: #121212;
+    background-color:white;
+}
+.row-1{
+    display:flex;
+    align-items: stretch;
+}
+.row-2 {
+    display: flex;
+    align-items: stretch;
+}
+.row-3 {
+    display: flex;
+    align-items: stretch;
+}
+.left-side {
+    width: 50%;
+    padding-left: .5em;
+}
+.right-side{
+    width: 50%;
+    padding-left: .5em; 
+}
+
+.country {
+    display: flex;
+    align-items: stretch;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+}
+.region{
+    padding: 1em;
+    width: 30%;
+    
+}
+.travel table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: darkgreen;
+}
+
+.travel th, td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: left;
+    color: #A9A9A9;
+}
+
+.travel th {
+    background-color: green;
+    color: #A9A9A9;
+}
+
+
+
+.travel tr:hover {
+    background-color: transparent;
+}
+
+.travel td a {
+    color: none;
+}
+
+    .travel td a:hover {
+        color: none;
+        background-color: transparent;
+    }
+.travel tr:nth-child(even) {
+    background-color: #1B4D3E;
+}
+.newgreen {
+    background-color: forestgreen;
+}
+
+
+#gallery {
+    position: relative;
+    width:100%;
+    font-family: "Garamond", "Times New Roman", serif;
+    color: #C0C0C0;
+}
+
+    #gallery ul {
+        list-style-type: none;
+        width: 300px;
+    }
+
+    #gallery li {
+        display: inline;
+        float: left;
+        padding: 10px;
+    }
+
+    #gallery img {
+        border-style: none;
+    }
+
+    #gallery a {
+        text-decoration: none;
+        font-style: italic;
+        
+    }
+
+    #gallery span {
+        position: absolute;
+        left: -4000px;
+        opacity: 0;
+        transition: opacity 3s ease-in-out;
+    }
+
+    #gallery a:hover span {
+        position: absolute;
+        top: 16px;
+        left: 320px;
+        opacity: 1;
+    }
+
+
+
+
+
+@media only screen and (max-width:81em){
+    
+    #gallery a:hover span {
+        display: none;
+
+    }
+    #gallery ul {
+        list-style-type: none;
+        
+    }
+    .open-nav {
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+
+    #gallery li {
+        display: inline;
+        padding: 10px;
+    }
+    wrappernavwords{
+        display:none;
+    }
+
+    .wrapperfooter, #mobilenav, wrapperh1index, #container, .wrappernav, main, wrappernavwords, #mobile, .open-nav {
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+    .wrapperbody {
+        margin: 0;
+        padding: 0 1em 0 1em;
+        border: 0;
+    }
+    #mobile-nav {
+        
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        
+        background-color: #2E2E2E;
+        z-index: 999;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.7em;
+    }
+    #heroindex {
+        max-width: 81em;
+    }
+
+    #morgathimage {
+        max-width: 81em;
+    }
+
+    #thragarimage {
+        max-width: 81em;
+    }
+
+    #elowenimage {
+        max-width: 81em;
+    }
+
+    #kaelithorimage {
+        max-width: 81em;
+    }
+
+    #vestraimage {
+        max-width: 81em;
+    }
+
+    #nimimage {
+        max-width: 81em;
+    }
+
+    #twisted-fangimage {
+        max-width: 81em;
+    }
+
+    #heroDM {
+        max-width: 81em;
+    }
+
+    #aidm {
+        max-width: 81em;
+    }
+
+    #world {
+        max-width: 81em;
+    }
+
+    #lore {
+        max-width: 81em;
+    }
+
+    #opinion {
+        max-width: 81em;
+    }
+
+    #scribe {
+        max-width: 81em;
+    }
+    .row-1, .row-2, .row-3 {
+        flex-direction: column;
+    }
+
+    .right-side, .left-side {
+        width: 100%;
+    }
+
+    .country {
+        flex-direction: column;
+    }
+
+    .region {
+        width: 100%;
+    }
+
+    iframe {
+        max-height: 18em;
+        max-width: 25em;
+    }
+
+    html {
+        background-image: linear-gradient(to bottom, #013220, #1B4D3E);
+    }
+    #container {
+        width: 98%;
+    }
+    #left-container {
+        width: 100%;
+    }
+
+    .wrapperh1 {
+        width: 100%;
+        box-shadow: none;
+        border: none;
+        text-align: center;
+        padding: 0;
+        line-height: 1;
+    }
+
+    #mobile {
+        background-image: linear-gradient(to bottom, #013220, #1B4D3E);
+    }
+
+    .wrappernav {
+        transition: background 0.4s;
+        flex: 0;
+        min-width: 0;
+        text-align: center;
+        color: white;
+    }
+
+    .wrappernavwords {
+        display: none;
+    }
+
+    .open-nav {
+        display: block;
+        position: fixed;
+        top: 90px;
+        right: 20px;
+        font-size: 2em;
+        color: white;
+        text-decoration: none;
+        z-index: 1000;
+    }
+
+
+
+
+    body {
+        background-image: linear-gradient(to bottom, #013220, #1B4D3E);
+        padding: 0;
+        margin: 0;
+    }
+
+    #mobile-nav:target {
+        display: flex;
+    }
+
+    #mobile-nav li {
+        padding: .5em;
+        list-style: none;
+        background-image: url('wizhat.png');
+        background-size: 1.3em 1.3em;
+        background-repeat: no-repeat;
+        background-position: left center;
+        padding-left: 1.4em;
+    }
+
+    .close-nav {
+        position: fixed;
+        top: 90px;
+        left: 20px;
+        text-decoration: none;
+        font-size: .75em;
+    }
+
+    #mobile-nav ul li a {
+        text-decoration: none;
+        font-size: 1em;
+    }
+
+    #mobile a:link {
+        color: #FFFFFF;
+    }
+
+    #mobile a:visited {
+        color: #D4AF37;
+    }
+
+    #mobile a:hover {
+        color: #B8860B;
+    }
+
+    #mobile a:active {
+        color: aqua;
+    }
+}
+
+
+
+@media only screen and (max-width:64em) {
+    iframe {
+        max-height: 13em;
+        max-width: 22em;
+    }
+    #heroindex {
+        max-width: 26em;
+    }
+    #morgathimage {
+        max-width: 24em;
+    }
+
+    #thragarimage {
+        max-width: 24em;
+    }
+
+    #elowenimage {
+        max-width: 24em;
+    }
+
+    #kaelithorimage {
+        max-width: 24em;
+    }
+
+    #vestraimage {
+        max-width: 24em;
+    }
+
+    #nimimage {
+        max-width: 24em;
+    }
+
+    #twisted-fangimage {
+        max-width: 24em;
+    }
+    .wrapperbody {
+        max-width: 26em;
+    }
+    
+}
+    
+
+
+    /*scrool bar stuff?*/
+    ::-webkit-scrollbar {
+        width: .8em;
+    }
+
+    /* Background of the scrollbar track */
+    ::-webkit-scrollbar-track {
+        background: #A9A9A9;
+        border-radius: 10px;
+    }
+
+    /* Scrollbar handle (thumb) */
+    ::-webkit-scrollbar-thumb {
+        background: #D4AF37;
+        border-radius: 10px;
+    }
+
+        /* Hover effect on the scrollbar thumb */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #B8860B;
+        }
+
+
+
+    /*Dark Mode stuff----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+    /* button */
+    .switch {
+        position: absolute;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+        top: 10px;
+        align-items: center;
+        color: white;
+    }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #7A502C;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            color: white;
+            margin-top: 1em;
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: black;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+
+input:checked + .slider {
+    background-color: #D4AF37 !important;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3 !important;
+}
+
+    input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+    }
+
+    /* Rounded sliders */
+    .slider.round {
+        border-radius: 34px;
+    }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
+
+.dark-mode-words{
+    color: white;
+}
+.dark-mode-placement{
+    margin: 0;
+    padding: 0;
+}
+
+html:has(.switch input:checked) {
+    background: #121212;
+}
+
+    body:has(.switch input:checked) {
+        background: #121212;
+    }
+
+    #container:has(.switch input:checked) {
+        background-image: none;
+        background-color: #121212;
+    }
+
+    #mobile:has(.switch input:checked) {
+        background-color: #121212;
+        background-image: none;
+    }
+
+    .wrappernav:has(.switch input:checked) {
+        background-color: #121212;
+    }
+#mobile-nav:has(.switch input:checked) {
+    background-color: #121212 !important;
+    
+}
+#container:has(.switch input:checked) {
+    background-color: #121212 !important;
+}
+#left-container:has(.switch input:checked) {
+    background-color: #121212 !important;
+}
+/* Persistent Dark Mode to compliment the javascript */
+.dark-mode {
+    background: #121212 !important;
+}
+

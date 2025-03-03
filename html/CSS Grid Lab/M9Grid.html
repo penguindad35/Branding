@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Flexbox Example Page</title>
+    <style>
+        #nav_menu ul {
+            display: flex; /* make the ul list a flexbox */
+            flex-basis: 100%; /* full width of page */
+            justify-content: space-around; /* allocate space evenly */
+            list-style-type: none;
+            background-color: black;
+            margin: 0;
+            padding: 0;
+        }
+
+        #nav_menu a {
+            color: white;
+        }
+
+        #nav_menu ul li {
+            flex-basis: 20%; /* each item occupies 20% of flexbox */
+        }
+
+        main {
+            display: flex; /* makes the main element a flexbox */
+        }
+
+        article {
+            flex-basis: 60%; /* will be 60% of available width */
+            margin: 1.5em 2.52525% 0 2.0202%;
+        }
+
+            article img {
+                max-width: 100%;
+                margin-bottom: 1em; /* image will be full width of article */
+            }
+
+        aside {
+            flex-basis: 40%; /* will be 40% of available width */
+            padding: 2.0202%;
+            max-width: 200px; /* See what happens if you remove or change max width here. */
+            min-height: 180px;
+            background-color: #ffebc6;
+            margin: 1.5em 2.0202% 0 0;
+        }
+
+        footer {
+            background-color: pink;
+        }
+        #galGrid{
+            display:grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+            grid-gap: 20px;
+            align-items: stretch;
+        }
+        #galGrid img{
+            border: 1px solid#ccc;
+            box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Webpage Business Name</h2>
+        <h3>Subheading Text Can Go Here</h3>
+    </header>
+    <nav id="nav_menu">
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="p2.html">Page 2</a></li>
+            <li><a href="p3.html">Page 3</a></li>
+            <li><a href="p4.html">Page 4</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article>
+            <h1>Article Title Goes Here</h1>
+            <img src="M8_Pic.png" alt="sample image">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </article>
+        <aside>
+            <h2>A Little Aside Title</h2>
+            <ol>
+                <li>A List Item</li>
+                <li>Another List Item</li>
+                <li>Yet Another List Item</li>
+                <li>We're Still Listing</li>
+            </ol>
+        </aside>
+    </main>
+    <h2>Sample Grid Image Gallery</h2>
+    <div id="galGrid">
+             <img src="M9_1.png" alt="Sample photo">
+                <img src="M9_2.png" alt="Sample photo">
+                <img src="M9_3.png" alt="Sample photo">
+                <img src="M9_4.png" alt="Sample photo">
+                <img src="M9_1.png" alt="Sample photo">
+                <img src="M9_2.png" alt="Sample photo">
+
+    </div>
+    <footer>
+        <p><small>Just some little footer text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</small></p>
+    </footer>
+</body>
+
+</html>

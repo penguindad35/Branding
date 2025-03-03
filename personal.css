@@ -1,0 +1,1095 @@
+﻿
+* {
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+header, main, nav, footer, figure, figcaption, aside, section, article {
+    display: block;
+}
+
+
+
+#mobile-nav, .mobilenav, .open-nav {
+    display: none;
+}
+
+html {
+    background-color: darkred;
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+.dark-mode-placement {
+    position: absolute;
+    top: 10px; /* Adjust vertical positioning */
+    right: 20px; /* Aligns to the right */
+    display: flex;
+    align-items: center; /* Aligns switch and text */
+    gap: 10px; /* Adds space between switch and text */
+}
+body p, body li, body th, body tr{
+font-size: 1.2em;
+}
+main{
+    background-color: antiquewhite;
+}
+
+/* --------------------------------- Header ----------------------------------------- Header ------------------------------------------- Header -------------------------------------------- */
+header {
+    border: 3px solid black;
+    box-shadow: black 4px 4px;
+    background-color: antiquewhite;
+
+}
+header {
+    display: flex;
+    margin-bottom: 4px;
+}
+
+
+/* ------------------------------------- Nav Section ------------------------------------ Nav Section ---------------------------------- Nav Section -----------------------------------------  */
+
+
+.nav-section {
+    display: flex;
+    align-items: center; 
+    max-width: 1200px;
+    margin: 0 20% 0 18%;
+}
+
+.nav {
+    display: flex;
+   
+}
+
+.nav-item {
+    padding: 0 2em 0 2em;
+    font-weight: bold;
+}
+
+    .nav-item a {
+        text-decoration: none;
+        font-size: 1.2em;
+        color: black;
+        
+      
+    }
+
+    nav a:link {
+        color: black;
+    }
+
+    nav a:visited {
+        color: dimgray;
+    }
+
+    nav a:hover {
+        color: slategray;
+    }
+
+    nav a:active {
+        color: aqua;
+    }
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+    nav ul li {
+        padding-bottom: 15px;
+    }
+
+/* -------------------------------- Project Page ------------------------------------------------ Project Page ---------------------------------------------- Project Page -------------------  */
+
+
+.capstone-paper a, .capstone-videos a {
+    text-decoration: none !important;
+    color: antiquewhite !important;
+    padding: 1em !important;
+    
+    text-align: center;
+}
+.html-projects{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.html-list{
+display: flex;
+flex-direction: column;
+        margin: 0;
+        width:33%;
+        padding-top: 1em;
+    text-align: center;
+}
+.html-list li{ 
+    padding: .5em;
+    list-style-type: none;
+}
+.html-list li a{ 
+    color: antiquewhite !important;
+    width:100% !important;
+height: 100% !important;
+
+}
+.html-list li:hover {
+    color: black;
+}
+.linux, .dome, .video, .bot, .games, .html, .sql, .implications, .capstone{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+width: 100%;
+}
+video{
+    margin-bottom: 1em;
+    border: #C9BDAD 3px solid;
+}
+.experience-main div p a{
+color: black;
+font-size: 1em !important;
+text-decoration: underline;
+padding: 0;
+margin: 0;
+}
+.experience-main div p a:hover{
+    color: blue;
+}
+.experience-main p{
+    text-indent: 1.5em;
+}
+
+/* Lightbox Styling */
+#lightbox-1, #lightbox-2, #lightbox-3, #lightbox-4, #lightbox-5, #lightbox-6, #lightbox-7, #lightbox-8, #lightbox-9, #lightbox-10, #lightbox-11, #lightbox-12, #lightbox-13{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    margin: 0;
+}
+
+/* When Lightbox is Open */
+:target#lightbox-1, :target#lightbox-2, :target#lightbox-3, :target#lightbox-4, :target#lightbox-5, :target#lightbox-6, :target#lightbox-7, :target#lightbox-8, :target#lightbox-9,
+:target#lightbox-10, :target#lightbox-11, :target#lightbox-12, :target#lightbox-13{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Lightbox Image */
+#lightbox-1 img, #lightbox-2 img, #lightbox-3 img, #lightbox-4 img, #lightbox-5 img, #lightbox-6 img, #lightbox-7 img, #lightbox-8 img, #lightbox-10 img, #lightbox-11 img, #lightbox-12 img,
+#lightbox-13 img {
+    max-width: 80%;
+    max-height: 80%;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+
+/* Close Button (X) */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    background: antiquewhite;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Close Button Hover Effect */
+.close:hover {
+    background: rgba(255, 255, 255, 0.5);
+    color: black;
+}
+
+.slideshow-container {
+    position: relative;
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    border: 2px solid #333;
+    border-radius: 10px;
+    margin-top: 1em;
+}
+
+.slides {
+    display: none;
+    width: 100%;
+}
+
+.active {
+    display: block;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: gray;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.active-dot {
+    background: black;
+}
+
+
+
+
+/* -------------------------------- Experiance & Skills Page ------------------------------- Experiance & Skills Page -------------------------------- Experiance & Skills Page -------------------  */
+.experience-main {
+    width: 80%;
+    border: 4px solid #C9BDAD;
+    box-shadow: .5em .5em #DED1BF;
+    margin: 2em 10% 2em 10%;
+    border-radius: 30px;
+    padding: 2em;
+}
+.experience-nav{
+    border:#DED1BF 3px solid;
+    border-radius: 50px;
+    box-shadow: .5em .5em #C9BDAD;
+}
+.experience-main  div {
+    padding: 1em;
+}
+.experience-main  section {
+    padding: 1em 1em;
+    border: 3px #DED1BF solid;
+    border-radius: 50px;
+    margin: 2em 0;
+    box-shadow: .5em .5em  #C9BDAD;
+}
+.experience-main  section p {
+    padding: .5em 0 0 2em;
+}
+.experience-main  h1 {
+    padding: 0 1em;
+    margin: 0;
+    text-align: center;
+}
+.experience-main div a{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: black;
+    padding: 0 1em;
+}
+.experience-main div a:hover{
+    color: blue;
+}
+ .list-main {
+    padding: .5em 0 0 2em;
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+
+}
+
+.list-main li{
+    border: black solid 1.5px;
+    border-radius: 50px;
+    background-color: #C9BDAD;
+    width: 20%;
+    margin-left: .25em;
+    display: flex; /* Enables flexbox */
+    align-items: center; /* Centers text vertically */
+    justify-content: center; /* Centers text horizontally */
+    text-align: center;
+
+}
+.list-second{
+    padding: .25em 0;
+    margin-left: 3em;
+    list-style-type: none;
+}
+.list-second a{
+    color: black;
+}
+.list-second a:hover {
+    color: blue;
+}
+.list-second li{
+    padding: .25em;
+}
+
+
+
+/* ------------------------- Tables ------------------------------------ Tables ----------------------------------------------- Tables ---------------------------------------------------------- */
+
+
+                                                    /* ---------------------------------- Skills Tables -----------------------------------*/
+
+.table-1, .table-2{
+    margin-top: 1em;
+    display:flex;
+justify-content:center;
+}
+.table-1 td, .table-2 td{
+    padding: .5em;
+    border: 2px solid #C9BDAD;
+}
+.table-1 th, .table-2 th{
+    padding: .5em;
+    border: 2px solid #C9BDAD;
+
+}
+
+
+
+                                                /* ---------------------------------- Education Tables -----------------------------------*/
+.SSCC table{
+    border-collapse: collapse;
+    
+}
+
+/*
+    .SSCC td {
+        padding: .5em;
+        text-align: center;
+    }
+    .SSCC tr {
+        
+        color: white;
+    }
+.SSCC tr:nth-child(4n + 1) {
+    background-color: rgb(0, 103, 177); 
+}
+
+.SSCC tr:nth-child(4n + 2) {
+    background-color: rgb(179, 35, 23); 
+}
+
+.SSCC tr:nth-child(4n + 3) {
+    background-color: rgb(227, 111, 30); 
+}
+
+.SSCC tr:nth-child(4n + 4) {
+    background-color: rgb(92, 135, 39); 
+}
+
+
+.SSCC th {
+    padding: .5em;
+    background-color: rgb(126, 128, 131);
+    color: white;
+}
+*/
+
+.UC table{
+    border-collapse: collapse;
+    
+}
+
+/*
+    .UC td {
+        padding: .5em;
+        text-align: center;
+        color: white;
+    }
+        .UC tr {
+            background-color: #e00122 ;
+            color: white;
+        }
+    .UC tr:nth-child(even) {
+        background-color: black;
+        
+    }
+
+        .UC th {
+            padding: .5em;
+            background-color: #e00122;
+            color: white;
+        }
+*/
+
+                                                            /* ---------------------------------- All Tables -----------------------------------*/
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+    overflow: hidden; /* Ensures the border-radius applies correctly */
+    border: 1px solid #ddd; /* Optional: Adds a light border */
+}
+
+th, td {
+    padding: 10px;
+    border: 2px solid #C9BDAD;
+text-align: center;
+}
+th{
+    background-color: darkgray;
+}
+td{
+    background-color: #ded1bf;
+}
+th:first-child {
+    border-top-left-radius: 10px;
+}
+
+th:last-child {
+    border-top-right-radius: 10px;
+}
+
+tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+
+
+/* -------------------------------- Extracurriculars Page ------------------------------------ Extracurriculars Page ------------------------------------- Extracurriculars Page -------------------  */
+
+.extracurriculars-main {
+    width: 80%;
+    border: 4px solid #C9BDAD;
+    box-shadow: .5em .5em #DED1BF;
+    margin: 2em 10% 2em 10%;
+    border-radius: 30px;
+    padding: 2em;
+}
+.extracurriculars-nav{
+    border:#DED1BF 3px solid;
+    border-radius: 50px;
+    box-shadow: .5em .5em #C9BDAD;
+}
+.extracurriculars-main  div {
+    padding: 1em;
+}
+.extracurriculars-main  section {
+    padding: 1em 1em;
+    border: 3px #DED1BF solid;
+    border-radius: 50px;
+    margin: 2em 0;
+    box-shadow: .5em .5em  #C9BDAD;
+}
+.extracurriculars-main  section p {
+    padding: .5em 0 0 2em;
+}
+.extracurriculars-main  h1 {
+    padding: 0 1em;
+    margin: 0;
+    text-align: center;
+}
+.extracurriculars-main div a{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: black;
+    padding: 0 1em;
+}
+.extracurriculars-main div a:hover{
+    color: blue;
+}
+ .list-main {
+    padding: .5em 0 0 2em;
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+
+}
+
+.third-list li{
+margin-left: 2em ;
+}
+.list-main li{
+    border: black solid 1.5px;
+    border-radius: 50px;
+    background-color: #C9BDAD;
+    width: 20%;
+    margin-left: .25em;
+    display: flex; /* Enables flexbox */
+    align-items: center; /* Centers text vertically */
+    justify-content: center; /* Centers text horizontally */
+    text-align: center;
+
+}
+.list-second{
+    padding: .25em 0;
+    margin-left: 3em;
+    list-style-type: none;
+}
+.list-second li{
+    padding: .25em;
+}
+
+
+
+/* ------------------------------------------------------------ Education Page ------------------------------------- Education Page ----------------------------------------------------------    */
+
+
+
+
+.education-main {
+    width: 80%;
+    border: 4px solid #C9BDAD;
+    box-shadow: .5em .5em #DED1BF;
+    margin: 2em 10% 2em 10%;
+    border-radius: 30px;
+    padding-bottom: 2em;
+}
+.education-main h2{
+    padding: 1em 2em 1em 2em;
+}
+    .education-main h1 {
+        padding: 2em 2em 0em 2em;
+        text-align: center;
+    }
+.education-main h2 a{
+    color: black;
+}
+.education-main p {
+    padding: 0 4em;
+}
+.SSCC {
+    
+    margin-left: 20%;
+}
+
+    .UC {
+    
+    margin-left: 20%;
+    
+}
+        #SSCC p{
+            text-indent: 1.5em;
+            padding-bottom: 1em;
+        }
+        #UC p{
+            text-indent: 1.5em;
+            padding-bottom: 1em;
+        }
+
+/*-------------------------------------- Home page ---------------------------------------- Home page -------------------------------------------------- Home Page ----------------------------- */
+
+    
+.index-main {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 100vh; /* Ensures it fills the viewport */
+    width: 100%;
+}
+
+.index-main-content {
+    display: flex;
+    align-items: center; /* Aligns items vertically */
+    justify-content: center; /* Centers horizontally */
+    width: 80%; /* Adjust for responsiveness */
+    max-width: 1200px; /* Prevents stretching */
+}
+
+.index-main-content-left {
+    width: 30%; /* Adjust size as needed */
+    display: flex;
+    justify-content: center; /* Centers the headshot inside */
+}
+
+.index-main-content-right {
+    width: 60%;
+    text-align: center; /* Centers text */
+    padding-left: 20px; /* Adds spacing from the headshot */
+    color: white;
+    
+}
+    .index-main-content-right p {
+        color: antiquewhite;
+        font-size: 1.2em;
+    }
+    .index-main-content-right h2 {
+        color: antiquewhite;
+        font-size: 2em;
+    }
+    .index-main-content-right h1 {
+        color: antiquewhite;
+        font-size: 3em;
+    }
+
+.resume-short a, .resume-long a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: antiquewhite;
+}
+    .resume-short a:hover, .resume-long a:hover {
+        color: blue;
+    }
+.doc-button {
+    display: inline-block;
+    background-color: darkred;
+    color: antiquewhite;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin-bottom: .5em;
+}
+#nav-image {
+    background-image: url(nav-image.png);
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+    aspect-ratio: 31/20;
+    width: 120px;
+    height: 100px;
+    background-size: 100% 100%;
+    border-radius: 20px 20px;
+}
+#index-background {
+    background-image: url(index-background.gif);
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+    aspect-ratio: 800/450;
+    background-size: 100% 100%;
+
+}
+#headshot {
+    background-image: url(headshot.jpg);
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+    width: 450px; /* Set a fixed size */
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-shadow: 4px 4px darkred;
+}
+
+
+
+
+.dark-mode-words {
+    color: black;
+}
+
+
+/*  --------------------------------------------- tablet mode --------------------------------------  tablet mode ---------------------------- tablet mode -------------------------------------- */
+
+
+@media only screen and (max-width:81em) {
+
+
+
+    .html-projects{
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+    }
+    .html-list{
+        width:80%
+    }
+    .extracurriculars-main {
+        width: 100%;
+        border: none;
+        box-shadow: none;
+        border-radius: 0%;
+        margin: 0;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 2em;
+        padding-top:2em;
+    }
+
+        .extracurriculars-main h2 {
+            padding: 1em 1em;
+        }
+
+        .extracurriculars-main h1 {
+            padding: 2em 0 1em 0 ;
+        }
+
+        .extracurriculars-main h2 a {
+            color: black;
+        }
+
+        .extracurriculars-main p {
+            padding: 0 1em;
+        }
+        .extracurriculars-main div p {
+            padding: 0 ;
+        }
+        .extracurriculars-main section{
+            border: none;
+            margin: 0;
+            padding: 0;
+            box-shadow: none;
+        }
+.list-main{
+    flex-wrap: wrap;
+    border: none;
+    box-shadow: none;
+    width: 100%;
+}
+.list-main li{
+   width: 100% ;
+   border-radius: 0%;
+   padding: .5em;
+}
+.extracurriculars-nav{
+    border: none;
+    box-shadow: none;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+    .experience-main {
+        width: 100%;
+        border: none;
+        box-shadow: none;
+        border-radius: 0%;
+        margin: 0;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 2em;
+        padding-top:2em;
+    }
+
+        .experience-main h2 {
+            padding: 1em 1em;
+        }
+
+        .experience-main h1 {
+            padding: 2em 0 1em 0 ;
+        }
+
+        .experiencemain h2 a {
+            color: black;
+        }
+
+        .experience-main p {
+            padding: 0 1em;
+        }
+        .experience-main div p {
+            padding: 0 ;
+        }
+        .experience-main section{
+            border: none;
+            margin: 0;
+            padding: 0;
+            box-shadow: none;
+        }
+.list-main{
+    flex-wrap: wrap;
+    border: none;
+    box-shadow: none;
+    width: 100%;
+}
+.list-main li{
+   width: 100% ;
+   border-radius: 0%;
+   padding: .5em;
+}
+.experience-nav{
+    border: none;
+    box-shadow: none;
+    width: 100%;
+}
+video{
+    width:80%;
+    border:none;
+}
+.linux-images{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+.linux-images img{
+    width: 100;
+}
+
+    .education-main {
+        width: 100%;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+        margin: 0;
+        
+        padding-bottom: 2em;
+        padding-top:2em;
+    }
+
+        .education-main h2 {
+            padding: 1em 1em;
+        }
+
+        .education-main h1 {
+            padding: 1em 1em;
+        }
+
+        .education-main h2 a {
+            color: black;
+        }
+
+        .education-main p {
+            padding: 0 1em;
+            width: 100%;
+        }
+
+    .SSCC {
+        margin-left: 1em;
+        width: 90%;
+    }
+    .UC {
+        margin-left: 1em;
+        width: 90%;
+    }
+
+    .resume-short a, .resume-long a {
+        color: antiquewhite !important;
+    }
+    .dark-mode-words-index {
+        color: antiquewhite;
+    }
+    header {
+        display: none;
+    }
+
+    open-nav {
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+
+    wrappernavwords {
+        display: none;
+    }
+
+    #mobile-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: antiquewhite;
+        z-index: 999;
+        justify-content: center;
+        align-items: center;
+        font-size: 3em;
+    }
+
+    .wrappernav {
+        transition: background 0.4s;
+        flex: 0;
+        min-width: 0;
+        text-align: center;
+        color: black;
+    }
+
+    .wrappernavwords {
+        display: none;
+    }
+
+    .open-nav {
+        display: block;
+        position: fixed;
+        top: 90px;
+        right: 20px;
+        font-size: 2em;
+        color: black;
+        text-decoration: none;
+        z-index: 1000;
+    }
+
+    #mobile-nav:target {
+        display: flex;
+    }
+
+    #mobile-nav li {
+        padding: .5em;
+        list-style: none;
+        background-image: url('wizhat.png');
+        background-size: 1.3em 1.3em;
+        background-repeat: no-repeat;
+        background-position: left center;
+        padding-left: 1.4em;
+    }
+
+    .close-nav {
+        position: fixed;
+        top: 90px;
+        left: 20px;
+        text-decoration: none;
+        font-size: .75em;
+    }
+
+    #mobile-nav ul li a {
+        text-decoration: none;
+        font-size: 1em;
+    }
+
+    #mobile a:link {
+        color: black;
+    }
+
+    #mobile a:visited {
+        color: dimgray;
+    }
+
+    #mobile a:hover {
+        color: slategray;
+    }
+
+    #mobile a:active {
+        color: aqua;
+    }
+
+    
+
+    .index-main-content {
+        flex-direction: column;
+    }
+
+    .index-main-content-left {
+        width: 100%;
+    }
+
+    .index-main-content-right {
+        width: 100%;
+        margin-top: 2em;
+    }
+    #headshot {
+        background-image: url(headshot.jpg);
+        background-repeat: no-repeat;
+        margin-bottom: 0;
+        width: 250px; 
+        height: 250px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 50%;
+        box-shadow: 4px 4px darkred;
+    }
+}
+
+/*------------------------------------ Phone Mode ---------------------------------------------- Phone mode ----------------------------------------------- Phone Mode ---------------------------  */
+
+    @media only screen and (max-width:64em) {
+    }
+
+
+
+
+
+/*Dark Mode stuff----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/* button */
+.switch {
+    position: absolute;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    top: 10px;
+    align-items: center;
+    color: white;
+}
+
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: darkgray;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        color: white;
+        margin-top: 1em;
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: black;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+
+input:checked + .slider {
+    background-color: dimgray !important;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px darkgray !important;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+    .slider.round:before {
+        border-radius: 50%;
+    }
+
+
+
+
+
