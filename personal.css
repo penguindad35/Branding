@@ -932,7 +932,7 @@ video{
         display: none;
     }
 
-    .open-nav {
+    .open-nav, .home-open-nav {
         display: block;
         position: fixed;
         top: 90px;
@@ -941,6 +941,9 @@ video{
         color: gray;
         text-decoration: none;
         z-index: 1000;
+    }
+    .home-open-nav {
+        color: antiquewhite !important;
     }
 
     #mobile-nav:target {
