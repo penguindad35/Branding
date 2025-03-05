@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-
+// For the flipper zero slides
 let slideIndex = 0;
                         let slides = document.querySelectorAll(".slides");
                         let dots = document.querySelectorAll(".dot");
@@ -125,3 +125,5 @@ let slideIndex = 0;
                                 dots[i].classList.toggle("active-dot", i === slideIndex);
                             });
                         }
+
+

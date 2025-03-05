@@ -788,11 +788,63 @@ box-shadow: 3px 3px 10px rgba(201, 189, 173, 0.2); /* Subtle shadow for depth */
     transform: translate(-5px, -5px); /* Moves up and to the left */
 box-shadow: 3px 3px 10px rgba(201, 189, 173, 0.2);
 }
+
+   /* Back to Top Button */
+   .back-to-top {
+    position: fixed;
+    bottom: 2em; 
+    right: 2em;
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center; 
+    background-color: darkred; 
+    border-radius: 0.5em; 
+    padding: 0.5em;
+    text-decoration: none;
+    transition: 0.6s ease-out;
+        }
+        
+    .back-to-top span {color: antiquewhite;
+    font-size: 3em;
+    transition: 0.6s ease-out;
+    background-color: transparent;
+    }
+    .back-to-top:hover { 
+        background-color:red;
+        }
+        .back-to-top:hover span{
+        transform: translateY(-10px);
+        }
 /*  --------------------------------------------- tablet mode --------------------------------------  tablet mode ---------------------------- tablet mode -------------------------------------- */
 
 
 @media only screen and (max-width:81em) {
-
+   /* Back to Top Button */
+   .back-to-top {
+    position: fixed;
+    bottom: 2em; 
+    right: 2em;
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center; 
+    background-color: darkred; 
+    border-radius: 0.5em; 
+    padding: 0.5em;
+    text-decoration: none;
+    transition: 0.6s ease-out;
+        }
+        
+    .back-to-top span {color: antiquewhite;
+    font-size: 1.5em;
+    transition: 0.6s ease-out;
+    background-color: transparent;
+    }
+    .back-to-top:hover { 
+        background-color:red;
+        }
+        .back-to-top:hover span{
+        transform: translateY(-10px);
+        }
 
     .main-section-2{
         width: 100%;
@@ -1124,6 +1176,7 @@ video{
         border-radius: 50%;
         box-shadow: 4px 4px darkred;
     }
+
 }
 
 /*------------------------------------ Phone Mode ---------------------------------------------- Phone mode ----------------------------------------------- Phone Mode ---------------------------  */
