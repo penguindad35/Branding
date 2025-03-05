@@ -718,7 +718,31 @@ box-shadow: 3px 3px 10px rgba(201, 189, 173, 0.2);
     border-radius: 50%;
     box-shadow: 4px 4px darkred;
 }
+#about-me-image{
+    background-image: url(about-me-image-1.jpeg);
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+    aspect-ratio: 4032/3024;
+    width: 40%; /* Set a fixed size */
+    background-size: cover;
+    background-position: center;
+    border-radius: 20%;
+}
 
+.about-me{
+    display: flex;
+    padding: 1em;
+width:100%
+}
+.about-me-image{
+    width:40%;
+    padding: 1em;
+}
+.index-about-me{
+    width:60%;
+    padding: 1em;
+
+}
 .dark-mode-words {
     color: black;
 }
@@ -838,6 +862,18 @@ box-shadow: 3px 3px 10px rgba(201, 189, 173, 0.2);
 
 
 @media only screen and (max-width:81em) {
+    .about-me{
+        flex-direction: column;
+    }
+
+    .index-about-me{
+        width:100%;    
+    }
+    #about-me-image{
+      
+        width: 100%; /* Set a fixed size */
+       
+    }
    /* Back to Top Button */
    .back-to-top {
     position: fixed;
