@@ -443,11 +443,11 @@ td a:hover{
 }
 
 .travel td a {
-    color: none;
+    color: transparent;
 }
 
     .travel td a:hover {
-        color: none;
+        color: transparent;
         background-color: transparent;
     }
 .travel tr:nth-child(even) {
@@ -495,7 +495,7 @@ td a:hover{
 
     #gallery a:hover span {
         position: absolute;
-        top: 16px;
+        top: 10em;
         left: 320px;
         opacity: 1;
     }
