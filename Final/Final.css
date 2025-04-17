@@ -375,9 +375,7 @@ tr:nth-child(even) {
     background-color: #1B4D3E;
 }
 
-tr:hover {
-    background-color: gold;
-}
+
 td a {
     color: #121212;
 }
