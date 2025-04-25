@@ -21,7 +21,7 @@
 
         <div id="mobile-nav">
             <a href="#mobile-nav"></a>
-            <a href="index.html" class="close-nav" ; aria-label="Button to close the navigation panel.">✖ </a>
+            <a href="index.html" class="close-nav" aria-label="Button to close the navigation panel.">✖ </a>
             <ul>
                 <li> <a href="index.html">Home</a></li>
                 <li> <a href="lore.html">Lore</a></li>
@@ -33,7 +33,7 @@
             </ul>
         </div>
         <div class="dark-mode-placement">
-            <label class="switch">
+            <label for="darkmode" class="switch">
                 <input type="checkbox" id="darkmode" aria-label="Button to activate dark mode.">
                 <span class="slider round"></span>
                 <br />
@@ -65,21 +65,26 @@
                             <p>Required fields are marked with an asterisk *.</p>
                             <form class="contribute">
                                 <label for="FName"><span class="required">*</span>First Name:</label>
-                                <input class="contribute-peice-1 contribute-peice" type="text" name="FName" required placeholder="Declare your given name!" />
+                                <input id="FName" class="contribute-peice-1 contribute-peice" type="text" name="FName" required placeholder="Declare your given name!" />
+                            
                                 <label for="LName"><span class="required">*</span>Last Name:</label>
-                                <input class="contribute-peice-2 contribute-peice" type="text" name="LName" required placeholder="Declare your clan name!" />
+                                <input id="LName" class="contribute-peice-2 contribute-peice" type="text" name="LName" required placeholder="Declare your clan name!" />
+                            
                                 <label for="email"><span class="required">*</span>E-mail:</label>
-                                <input class="contribute-peice-3 contribute-peice" type="email" name="Email" size="40" required placeholder="Declare your fancy mail name!" />
+                                <input id="email" class="contribute-peice-3 contribute-peice" type="email" name="Email" size="40" required placeholder="Declare your fancy mail name!" />
+                            
                                 <label for="phone">Phone:</label>
-                                <input class="contribute-peice-4 contribute-peice" type="tel" name="Phone" size="12" placeholder="Declare your metal box number!" />
+                                <input id="phone" class="contribute-peice-4 contribute-peice" type="tel" name="Phone" size="12" placeholder="Declare your metal box number!" />
+                            
                                 <label for="message"><span class="required">*</span>Message:</label>
-                                <textarea class="contribute-peice-5 contribute-peice" type="text" name="Message" required placeholder="Declare your lore or upload it below! If you uploaded a file let me know here."></textarea>
-
-                                <input class="contribute-peice-6 contribute-peice" type="file" id="myFile" name="filename" placeholder=" Declare your file!">
-
+                                <textarea id="message" class="contribute-peice-5 contribute-peice" name="Message" required placeholder="Declare your lore or upload it below! If you uploaded a file let me know here."></textarea>
+                            
+                                <label for="myFile">Declare your file:</label>
+                                <input id="myFile" class="contribute-peice-6 contribute-peice" type="file" name="filename">
+                            
                                 <button class="contribute-peice-7 contribute-peice" type="submit" name="submit">Let yourself be heard!</button>
-
                             </form>
+                            
                         </div>
                     </main>
 
